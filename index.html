@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c2881eeb95.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundImage:{
+                'hero-bg': "url('./images/banner.png')"
+              },
+              colors:{
+                'bg-start':'#111',
+                'bg-end':'#11111100'
+              }
+              
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-garamond {
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="font-poppins max-w-screen-xl px-14 py-8 mx-auto">
+
+        <!-- navbar section -->
+        <nav class="">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                    </div>
+                    <img src="./images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a href="">Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a href="">Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a href="">Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#B68C5A] text-white font-semibold">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- image -->
+        <section>
+            <div class="hero h-[550px] bg-hero-bg">
+                <div class="hero-overlay bg-gradient-to-r from-bg-start via-bg-end to-bg-start opacity-30"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-[668px]">
+                    <h1 class="mb-5 text-7xl font-garamond font-extrabold text-white">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
