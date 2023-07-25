@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <header class="font-poppins max-w-screen-xl px-14 py-8 mx-auto">
+    <header class="font-poppins max-w-screen-xl md:px-14 py-8 mx-auto">
 
         <!-- navbar section -->
         <nav class="">
@@ -78,8 +78,9 @@
         
         <!-- image -->
         <section>
-            <div class="hero h-[550px] bg-hero-bg rounded-lg mt-10 ">
-                <div class="hero-overlay bg-gradient-to-r from-bg-start via-bg-end to-bg-start rounded-lg opacity-30"></div>
+            <div class="hero md:h-[550px] bg-hero-bg rounded-lg mt-10 ">
+                <div class="hero-overlay bg-gradient-to-r from-bg-start via-bg-end to-bg-start rounded-lg opacity-30">
+                </div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-[668px]">
                     <h1 class="mb-5 text-7xl font-garamond font-extrabold text-white">We Provide Effective Legal Solutions</h1>
@@ -101,10 +102,10 @@
             </div>
 
             <!-- card container -->
-            <div class="grid grid-cols-3">
+            <div class="grid grid-col-1 md:grid-cols-3">
                 <!-- card 1-->
                 <div class="hover:bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F300]">
-                    <div class=" border-b-2 border-r-2 p-8">
+                    <div class=" border-b-2 md:border-r-2 md:p-8">
                         <figure class="px-10 pt-10">
                           <img src="./images/business.png" alt="" class="mx-auto" />
                         </figure>
@@ -119,7 +120,7 @@
                 </div>
                 <!-- card 2-->
                 <div class="hover:bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F300]">
-                    <div class=" border-b-2 border-r-2 p-8">
+                    <div class=" border-b-2 md:border-r-2 md:p-8">
                         <figure class="px-10 pt-10">
                           <img src="./images/criminal.png" alt="" class="mx-auto" />
                         </figure>
@@ -134,7 +135,7 @@
                 </div>
                 <!-- card 3-->
                 <div class="hover:bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F300]">
-                    <div class=" border-b-2 p-8">
+                    <div class=" border-b-2 md:p-8">
                         <figure class="px-10 pt-10">
                           <img src="./images/child.png" alt="" class="mx-auto" />
                         </figure>
@@ -149,7 +150,7 @@
                 </div>
                 <!-- card 4-->
                 <div class="hover:bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F300]">
-                    <div class=" border-r-2 p-8">
+                    <div class="border-b-2 md:border-b-0 md:border-r-2 md:p-8">
                         <figure class="px-10 pt-10">
                           <img src="./images/education.png" alt="" class="mx-auto" />
                         </figure>
@@ -164,7 +165,7 @@
                 </div>
                 <!-- card 5-->
                 <div class="hover:bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F300]">
-                    <div class="border-r-2 p-8">
+                    <div class="md:border-r-2 md:p-8">
                         <figure class="px-10 pt-10">
                           <img src="./images/divorce.png" alt="" class="mx-auto" />
                         </figure>
@@ -179,8 +180,8 @@
                 </div>
                 <!-- card 6-->
                 <div class="hover:bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F300]">
-                    <div class="p-8">
-                        <figure class="px-10 pt-10">
+                    <div class="border-b-2 md:border-b-0 md:p-8">
+                        <figure class="border-t-2 md:border-none px-10 pt-10">
                           <img src="./images/tax.png" alt="" class="mx-auto" />
                         </figure>
                         <div class="card-body items-center text-center">
@@ -198,33 +199,41 @@
 
         <!-- client review -->
         <section class="max-w-screen-xl px-14 py-8 mx-auto">
+            <!-- text  -->
             <div>
                 <div class="mb-20">
                     <h1 class="font-extrabold text-4xl font-garamond text-center text-[#414040]">What Our Client Say</h1>
                     <p class="max-w-[714px] mx-auto font-poppins mt-6 text-center text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 </div>
             </div>
-            <div>
-                <div class="carousel w-full">
-                    <div id="item1" class="carousel-item w-full">
-                      <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-                    </div> 
-                    <div id="item2" class="carousel-item w-full">
-                      <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                    </div> 
-                    <div id="item3" class="carousel-item w-full">
-                      <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                    </div> 
-                    <div id="item4" class="carousel-item w-full">
-                      <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                    </div>
-                  </div> 
-                  <div class="flex justify-center w-full py-2 gap-2">
-                    <a href="#item1" class="btn btn-xs">1</a> 
-                    <a href="#item2" class="btn btn-xs">2</a> 
-                    <a href="#item3" class="btn btn-xs">3</a> 
-                    <a href="#item4" class="btn btn-xs">4</a>
-                  </div>
+
+            <!-- slider -->
+            <div class="">
+                <div>
+                    <div class="carousel h-[500px]">
+                        <div id="slide1" class="carousel-item relative w-full">
+                          <img src="./images/slider-1.jpg" class="w-full" />
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a> 
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                          </div>
+                        </div> 
+                        <div id="slide2" class="carousel-item relative w-full">
+                          <img src="./images/slider-2.jpg" class="w-full" />
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a> 
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                          </div>
+                        </div> 
+                        <div id="slide3" class="carousel-item relative w-full">
+                          <img src="./images/slider-3.jpg" class="w-full" />
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a> 
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                          </div>
+                        </div> 
+                      </div>
+                </div>
             </div>
         </section>
     </main>
